@@ -50,7 +50,7 @@ body::before {
 
 /* HEADER */
 header {
-  padding: 2rem 2rem 1.2rem;
+  padding: calc(env(safe-area-inset-top, 0px) + 2rem) 2rem 1.2rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
@@ -371,7 +371,7 @@ td[contenteditable="true"]:focus { background:rgba(201,168,76,0.08); border-radi
   .cat-diagram-container{min-height:400px;}
 
   /* ── Header: compact 2-col vessel grid ── */
-  header{padding:0.9rem 1rem 0.65rem;}
+  header{padding:calc(env(safe-area-inset-top, 0px) + 0.9rem) 1rem 0.65rem;}
   h1{font-size:clamp(1.25rem,5.5vw,1.7rem);}
   .vessel-info{display:grid;grid-template-columns:1fr 1fr;gap:0.4rem 0.5rem;margin-top:0.5rem;justify-content:unset;}
   .vessel-field{flex-direction:column;gap:0.08rem;}
