@@ -475,7 +475,13 @@ td[contenteditable="true"]:focus { background:rgba(201,168,76,0.08); border-radi
   /* schedule mobile overrides */
   .hours-card{padding:0.5rem 0.25rem;}
   .hours-card input{font-size:1rem;}
-  .sch-input-group input{min-height:40px;}
+  .sch-inputs{grid-template-columns:1fr;}
+  .sch-input-group input{
+    min-height:44px;height:44px;
+    box-sizing:border-box;width:100%;
+    -webkit-appearance:none;appearance:none;
+    padding:0 0.5rem;font-size:0.88rem;
+  }
 }
 
 /* ════════════ SCHEDULE PANEL ════════════ */
@@ -510,6 +516,15 @@ td[contenteditable="true"]:focus { background:rgba(201,168,76,0.08); border-radi
 .sch-status.warn{color:#f0c050;}
 .sch-status.bad{color:#e87e74;}
 .sch-status.neutral{color:var(--foam);opacity:0.5;}
+@media(max-width:600px){
+  .sch-inputs{grid-template-columns:1fr;}
+  .sch-input-group input{
+    min-height:44px;height:44px;
+    box-sizing:border-box;width:100%;
+    -webkit-appearance:none;appearance:none;
+    padding:0 0.5rem;font-size:0.88rem;
+  }
+}
 </style>
 </head>
 <body>
